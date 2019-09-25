@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhap 1 so :"));
+    let a = [1,1];
+    while(a[a.length-1]<num){
+        let tmp = a[a.length-1]+a[a.length-2];
+        a.push(tmp);
+    }
+    a.pop();
+    document.write("Day cac so Fibonacci nho hon "+num+" : "+a);
+</script>
+</body>
+</html>

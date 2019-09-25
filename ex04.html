@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let lh = parseInt(prompt("Nhap so * chieu dai :"));
+    let wh = parseInt(prompt("Nhap so * chieu rong :"));
+    let text="";
+    for(i=1;i<=wh;i++){
+        if(i==1 || i==wh){
+            for(j=1;j<= lh;j++){
+                text+="*";
+            }
+        }else{
+            for(j=1;j<=lh;j++){
+                if(j==1 || j ==lh){
+                    text+="*";
+                }else text+="&nbsp&nbsp";
+            }
+        }
+        text+="<br>";
+    }
+    document.write(text);
+</script>
+</body>
+</html>
